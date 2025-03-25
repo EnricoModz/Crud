@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #171a21;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header, footer{
+    background-color: #1b2838;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    color: #fff;
+    margin: 0 25px;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 5px;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: #2a475e;
+    font-size: 20px;
+}
+h3{
+    text-align: center;
+    margin: 20px;
+}
+form, #tabela{
+    color: #fff;
+    background-color: #2a475e;
+    border-radius: 20px;
+    margin: 10% auto;
+    text-align: center;
+    width: fit-content;
+    padding: 20px 30px;
+}
+input{
+    font-size: 18px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+
+    background-color: rgb(68, 1, 1);
+    border: none;
+    border-bottom: 0.5px solid white;
+    border-right: 0.5px solid white;
+    outline: none;
+}
+::placeholder{
+    color: #8f0000;
+    font-size: 17px;
+}
+button{
+    padding: 8px 18px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: #1b2838;
+    color: #fff;
+    transition: 0.5s;
+}
+button:hover{
+    padding: 15px 30px;
+    background-color: #171a21;
+}
+td, th{
+    border: 1px solid;
+    padding: 4px;
+}
+td{
+    padding: 3px 10px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 25px 0;
+    width: 100%;
+}
+footer p{
+    margin-bottom: -4px;
+}
+
+.inputbox {
+    position: relative;
+    width: 196px;
+  }
+  
+  .inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .inputbox input:valid ~span,
+  .inputbox input:focus ~span {
+    color: #00cc00;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0,75em;
+  }
+  
+  .inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #1b2838;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 44px;
+  }
+
+
+img{
+    width: 100px;
+}
